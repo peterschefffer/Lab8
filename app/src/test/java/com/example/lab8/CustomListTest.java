@@ -32,12 +32,17 @@ public class CustomListTest {
     public void testHasCity() {
         CustomList list = new CustomList(null, cityList);
         City city = new City("Calgary", "Alberta");
-        list.add(city);
+        list.addCity(city);
         assertTrue(list.hasCity(city));
     }
 
+    /*
     @Test
     public void testDeleteCity() {
         CustomList list = new CustomList(null, cityList);
-    }
+        City city = new City("Calgary", "Alberta");
+        list.add(city);
+        assertTrue(list.hasCity(city));
+        list.deleteCity(city);
+    }*/
 }
